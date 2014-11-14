@@ -87,6 +87,9 @@ class Theme {
 
 		require_once 'widgets/recent-posts.php';
 		register_widget( 'UFVJM\Widgets\Recent_Posts' );
+
+		require_once 'widgets/banners-slider.php';
+		register_widget( 'UFVJM\Widgets\Recent_Posts' );
 	}
 
 	/**
