@@ -1,0 +1,465 @@
+@CHARSET "UTF-8";
+/**
+* Portal UFVJM CSS
+* @version 1.1.4
+* @copyright (C) 2009 by DTI-UFVJM - All rights reserved!
+*/
+
+/* ###################### OVER ############ALL SETTINGS########## */
+* {
+    border: 0em none;
+    border-collapse: collapse;
+    list-style-image: none;
+    list-style-type: none;
+    margin: 0em;
+    padding: 0em;
+    text-decoration: none;
+}
+
+body {
+    font-size: 0.7086em;
+    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden !important;
+}
+
+.contentpaneopen,.contentpaneopen p,.contentpaneopen td,.description {
+    font-size: 1.05em;
+}
+
+body.template,body#template {
+    text-align: center;
+    background-color: #ffffff;
+    background-image:
+        url('http://livre.ufvjm.edu.br/img/page_header_tile-25.jpg');
+    background-repeat: repeat-x;
+    background-attachment: scroll;
+}
+
+.laydiv {
+    position: relative;
+    text-align: left;
+}
+
+.laydiv,#footer,#footer .bannergroup {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#topNav {
+    background-color: #0064A8;
+    margin-bottom: 1em;
+    background-position: center center;
+    background-repeat: repeat-x;
+}
+
+#wrapper {
+    position: relative;
+}
+
+.section {
+    padding-bottom: 0.5em;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+
+.header {
+    padding-top: 40px;
+}
+
+.home .header {
+    margin-top: -10px !important;
+}
+
+#content {
+    background-color: #FFFFFF;
+}
+
+.template #conteudo,#template #conteudo {
+    margin-top: 0.8em;
+}
+
+.template #conteudo,#template #conteudo {
+    display: block;
+    width: 100%;
+    line-height: 1.45em;
+    margin-bottom: 0.8em;
+}
+
+/* GRID */
+.col1 {
+    position: relative;
+}
+
+.col2 {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-right: 5px;
+}
+
+.col3 {
+    padding-left: 5px;
+}
+
+.header .col1 {
+    border: 0px;
+}
+
+#content-outer .col1 .inner {
+    margin-right: 15px;
+}
+
+.header .col2 {
+    border: 0px;
+}
+
+#content-outer .col3 {
+    margin-bottom: 1em;
+}
+
+#content-outer .col3 .inner {
+    margin-left: 5px;
+}
+
+/* Casses */
+.alignleft {
+    float: left;
+}
+
+.alignright {
+    float: right;
+}
+
+.c,#servicos-web img,#servicos-web span {
+    clear: both;
+    float: none !important;
+    display: block;
+}
+
+#servicos-web, #servicos-web * {
+    vertical-align: bottom;
+}
+
+#servicos-web li a {
+    text-align: center;
+}
+
+#servicos-web li a img {
+    max-width: 32px;
+}
+
+.logo {
+    min-width: 44px;
+    min-height: 44px;
+    max-width: 200px;
+}
+
+/*	Using 'class="alignright"' on an image will (who would've
+thought?!) align the image to the right. And using 'class="centered',
+will of course center the image. This is much better than using
+align="center", being much more futureproof (and valid) */
+img.centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img.alignright {
+    padding: 4px;
+    margin: 0 0 2px 7px;
+    display: inline;
+}
+
+img.alignleft {
+    padding: 4px;
+    margin: 0 7px 2px 0;
+    display: inline;
+}
+
+/* End Images */
+.h,.contentpaneopen_home,.contentheading_home,.conteudo .contentpaneopen_home *,.dn,.home .breadcrumbs,.widget_pages h2,p.copyright
+{
+    display: none;
+}
+
+.contentpaneopen hr {
+    display: block !important;
+}
+
+.column_separator {
+    padding-left: 1.5em;
+}
+
+.blog_more div strong {
+    display: block;
+}
+
+.contentheading h3 {
+    margin-top: 0em !important;
+}
+
+h3,.contentpaneopen h3,.moduletable th,.blog_more div strong,.widget h2
+{
+    width: 100%;
+}
+
+/* ###################### MODULE SETTINGS, COMPONENT SETTINGS ###################### */
+.moduletable,#left ul li.widget {
+    width: 100%;
+    border-bottom: 0px solid;
+    border-color: #DFEBF7;
+}
+
+.moduletable th,.moduletable .th,.widget h2 {
+    color: #6F9949;
+    text-align: left;
+}
+
+.col2 .moduletable {
+    float: left !important;
+    margin-top: 0.5em;
+    width: auto !important;
+}
+
+.header .col2 {
+    padding-left: 10px;
+}
+
+.col2 .moduletable {
+    margin-bottom: 0.5em;
+}
+
+.col2 .moduletable .rawimages span#active-language img {
+    border: 1px solid;
+}
+
+#left {padding-right: 15px;}
+
+#left .moduletable {
+    margin-bottom: 1em;
+    border-bottom: 1px solid #B8DC7C;
+    padding-bottom: 1em;
+}
+
+#left .moduletable:last-child {
+    border-bottom: 0px none !important;
+}
+
+.m4j_required {
+    background-color: #900 !important;
+    color: #FFF !important;
+    display: block;
+    float: left;
+    padding: 5px 5px 0px 5px;
+    text-align: center;
+    margin-right: 5px;
+    margin-top: 3px;
+}
+
+/* ###################### CONTENT PAGE SETTINGS ###################### */
+.moduletable td {
+    vertical-align: top;
+}
+
+.dm_taskbar li,.buttonheading {
+    list-style-type: none !important;
+    list-style-image: none !important;
+    list-style-position: outside !important;
+}
+
+#logo {
+    width: 165px;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    display: block;
+}
+
+.header #logo {
+    background-image:
+        url(http://www.ufvjm.edu.br/images/banners/logo-h64.gif);
+    padding-left: 225px;
+    height: 64px;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.banneritem {
+    margin-bottom: 1em;
+}
+
+#footer .banneritem {
+    float: left;
+    margin-left: 0.4em;
+    margin-right: 0.4em;
+}
+
+#footer .bannergroup {
+    padding-top: 1em;
+    clear: both;
+}
+
+.moduletablerss {
+    float: right;
+}
+
+#pp_search,.item574 {
+    margin-top: 2em;
+}
+
+.contact_sep {
+    height: 1em;
+}
+
+.buttonsheading,.pagenav {
+    float: right;
+    clear: left;
+}
+
+.buttonsheading *,.pagenav * {
+    list-style-type: none;
+    list-style-image: none;
+}
+
+.buttonsheading li,.pagenav th {
+    float: left;
+}
+
+
+#footer div.laydiv {
+    border-top: 1px solid #E0E0E0 !important;
+    padding-top: 1em;
+}
+
+/* ###################### TABLE OF CONTENTS ###################### */
+.contenttoc {
+    float: right;
+    display: block;
+    margin-left: 1.5em;
+    margin-bottom: 1.5em;
+    width: 30%;
+    border: 1px solid #0064A8;
+    background-color: #FFFFFF;
+}
+
+.contenttoc h3.th {
+    background-color: #0064A8;
+    margin: 0em;
+    padding: 0em;
+    color: #FFFFFF;
+}
+
+/* ###################### MENU SERVICOS WEB ###################### */
+#servicos-web li {
+    float: left;
+    text-align: center;
+    margin-right: 1ex;
+}
+
+/* ###################### NOTICIAS ###################### */
+.thumbsup li .thumbsup-intro {
+    overflow: hidden;
+    height: 0em;
+    -webkit-transition: height 0.25s linear;
+    -moz-transition: height 0.25s linear;
+}
+
+.thumbsup li:hover .thumbsup-intro {
+    display: block;
+    height: 6em;
+    -webkit-transition: height 0.25s linear;
+    -moz-transition: height 0.25s linear;
+}
+
+.thumbsup-intro a {
+    color: #333333 !important;
+    font-weight: normal !important;
+}
+
+/* ###################### BOXES ###################### */
+.box,ul.contenttoc,ul.dm_mod_mostdown,.gs-promotion {
+    padding: 0.5em;
+    border-style: solid;
+    border-width: 0.1em;
+    border-color: #98BDE0;
+    margin-bottom: 1em;
+}
+
+/* ###################### MARGENS ###################### */
+.mr1 {
+    margin-right: 1em;
+}
+
+.gs-result:hover .gs-visibleUrl-short {
+    display: none !important;
+}
+
+.gs-result:hover .gs-visibleUrl-long {
+    display: block !important;
+    overflow: hidden;
+}
+
+/* ###################### BREADCRUMB E PAGINACAO ###################### */
+.template .breadcrumbs,#template .breadcrumbs {
+    top: -60px;
+    position: absolute;
+}
+
+#cse {
+    width: 100%;
+}
+
+#globalNav {
+    position: absolute;
+    top: 0px;
+    font-size: 12px;
+    padding-left: 13.5px;
+}
+
+@media (min-width: 768px) {
+
+    /* .template #sidebar, */
+    .template #atalhos, #template #sidebar {
+        border-left: 1px solid #B8DC7C;
+    }
+
+    .hasnt-sidebar #content-outer .col2 {
+        width: 765px;
+    }
+    .col1 {
+        float: left;
+    }
+    .col2 {
+        float: left;
+        width: 600px;
+    }
+    .col3 {
+        float: right;
+        width: 150px;
+    }
+    .template #conteudo,#template #conteudo {
+        float: left;
+    }
+
+    .article_column, #left, .col2 .moduletable {
+        float: left;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .w,.template #footer,.template .laydiv,#footer .bannergroup,#template #footer {
+        width: 990px;
+    }
+    .col1 {
+        width: 200px;
+    }
+    #atalhos, .has-sidebar #sidebar {
+        float: right;
+    }
+    .l {
+        float: left;
+    }
+    .r {
+        float: left;
+    }
+}

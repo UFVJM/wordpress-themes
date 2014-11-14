@@ -1,0 +1,193 @@
+@CHARSET "UTF-8";
+
+/* CSS Document
+ * 
+ * Seletores obsoletos: .KT_th, col#prop, table.contentpane *
+ * Evite utilizar:      cursor:default, min-width, page-break:avoid, page-break-after:always, table-layout:fixed, *:initial
+ * 
+ * */
+
+/* ############################ CSS RESET ########################### */
+
+table, thead, tbody, tfoot, th, tr, td {	margin: 0; 	padding: 0; 	border: 0; 	background: transparent;} /* reset especifico para tabelas */
+
+.datagrid td.actions, .datagrid td.actions ul {padding:0em; margin:0em;}
+
+/* ############################ SIGA SPECS ########################## */
+
+.depto, td.data ul:before { color: #71809D; font-size:0.875em; }
+.depto {margin-left: 1ex; }
+
+/* Miolo */ td.data ul li,
+/* Void  */ ul.datalist li {position: relative; }
+
+td.data ul {margin:0em; padding:0em;}
+td.data ul:before {content: 'Escolha uma turma:';  margin-right:1ex; float:left; display:block; color: #71809D; }
+td.data ul li {float: left; margin-right:1em; list-style-type:none !important; margin-left: 0em !important; padding-left: 0em !important;}
+td.data ul li div.tooltip, .m-grid-body thead th div.tooltip, ul.datalist div.tooltip {position:absolute; visibility: hidden; opacity: 0; background-color: #FFFFFF; border:1px solid; padding:0.5em; z-index:200; font-weight: bold; }
+
+td.data ul li a, .m-grid-body thead th div.tooltip a {display:block;}
+
+div.tooltip {-webkit-transition: 0.2s linear opacity;}
+
+td.data ul li:hover div.tooltip, .m-grid-body thead th:hover div.tooltip, ul.datalist li:hover div.tooltip {visibility: visible; opacity: 1;  color: #000}
+ul.datalist li:hover { background-color: #733; color: #FFF; -webkit-transition: background 0.25s linear; }
+.m-grid-body thead th div.tooltip dl dt { float: left; }
+.m-grid-body thead th div.tooltip dl dd { font-weight: normal; }
+
+/* ############################ GRIDS ############################### */
+
+/* Grid generica     */	table.grid,
+/* Miolo             */	table.m-grid-body,
+/* VOID              */	table.datagrid,
+/* Office            */	table.MsoNormalTable,
+/* Joomla            */
+	/* com_docman	 */	#dm_details table,
+	/* com_eventlist */	#eventlist table.eventtable,
+	/* com_mad4joomla*/	#m4jForm table.m4j_form_table {
+		
+		border: solid #9EB6CE !important;
+		border-width: thin !important;
+		border-collapse:collapse;
+		color: #333333;
+		background-position:left top;
+		background-repeat:no-repeat;
+		background-color:#FFFFFF;
+		width:99%;
+		margin: 1em 0.1em;
+		font-size: 1em;
+}
+
+table caption {
+	font-weight:bold;
+}
+
+table caption, table td, table th {
+	text-align:left;
+	margin-bottom:.0001pt;
+}
+
+/*** Grid: configura borda e espacamento para celulas e cabecalhos ***/
+
+  /* Grid generica */   table.grid td,						table.grid th,
+
+  /* Grid para Joomla*/
+    /* com_content   */ .contentpane form td,				.contentpane form th,
+    /* com_docman    */ #dm_details table td,				#dm_details table th,
+    /* com_eventlist */ #eventlist table.eventtable td,		#eventlist table.eventtable th,
+	/* com_mad4joomla*/ #m4jForm table.m4j_form_table td,	#m4jForm table.m4j_form_table th,
+ 
+  /* Grid para Void  */ table.datagrid td,					table.datagrid th,
+  /* Grid para Miolo */ table.m-grid-body td,				table.m-grid-body th,
+  /* Grid para Office*/ table.MsoNormalTable td,			table.MsoNormalTable th
+{
+		border-left: 1.0pt solid;
+		border-right: 1.0pt solid;
+		border-top: none;
+		border-bottom: 1.0pt solid;
+		border-color: #D0D7E5;
+		padding-left: 5.4pt;
+		padding-right: 5.4pt;
+		padding-top: 0cm;
+		padding-bottom: 0cm;
+		line-height:150%;
+		vertical-align: top;
+}
+
+table.grid th, table.grid .KT_th, .sectiontableheader, 
+table.m-grid-body th, table.m-grid-body thead td, table.m-grid-body thead th,
+table.datagrid th, table.datagrid .KT_th, #dm_details thead td, .sectiontableheader, #adminForm thead th, #dm_details table th,
+#m4jForm table.m4j_form_table td.p {
+	border-color: #9EB6CE;
+	border-top: 1.0pt solid #688CAF;
+	border-bottom: 1.0pt solid #e5e5e5;
+	border-right: 1px solid #E5E5E5;
+	background-repeat:repeat-x;
+	background-position:top;
+	background-color : #0062A6;
+	color:#FFFFFF !important;
+	/*text-shadow: #000000 1px -1px 1px;*/
+	height           : 2em;
+	font-weight      : bold;
+	padding: 0.4em;
+}
+
+table.grid th, table.grid .KT_th, .sectiontableheader,
+table.grid th a:link, table.grid .KT_th a:link, .sectiontableheader a:link,
+table.m-grid-body th a:link, table.m-grid-body th a:visited,
+table.grid th a:visited, table.grid .KT_th a:visited, .sectiontableheader a:visited,
+table.datagrid th, table.datagrid .KT_th, table.datagrid th a:link, table.datagrid th a:visited, #adminForm thead th, #dm_details table th, table.m4j_form_table td.p {color: #FFFFFF;}
+
+table.grid th img, div#eventlist table.eventtable th img { margin: 0em 0em 0.5em 0.5em; vertical-align: middle; border: none; }
+
+table.datagrid td.important, .m-grid-box .m-grid-attention { font-weight: bold; color: #900; text-align: center; }
+
+/* ##################### EVEN & ODD ################## */
+
+/* Classe generica */	.even,
+/* Miolo 		   */	.row1,
+/* Joomla		   */	.sectiontableentry1, tr.sectiontableentry1 td,
+/* CSS3			   */	 .m4j_form_table tr:nth-child(even)
+{
+	background-color: #F4F8FC !important;
+}
+
+/* Void   */ .odd,
+/* Miolo  */ .row2,
+/* Joomla */ .sectiontableentry2, tr.sectiontableentry2 td,
+/* CSS3	  */ .m4j_form_table tr:nth-child(odd)
+{
+	background-color : #F7FBF0 !important;
+}
+
+/* ################## EFEITOS DE HOVER E TRANSICAO ################## */
+
+   /* Grid generica    */ .grid     tr:hover,
+   /* Grid para Void   */ .datagrid tr:hover, .template th a:hover,
+   /* Grid para Miolo  */ .m-grid-body tr:hover,
+   /* Grid para Joomla 
+    /* com_docman      */ #dm_details table tr:hover,
+    /* com_eventlist   */ #eventlist .eventtable tr:hover td    {
+    background-color: #D5DDE9;
+    transition:       background 0.25 linear;
+    -webkit-transition: background 0.25s linear;
+}
+
+.grid tr.sectiontableentry1:hover, .m-grid-body .row1:hover, .datagrid tr.even:hover, .m4j_form_table tr:nth-child(even):hover {
+	background-color:#CCDEF0 !important;
+}
+.grid tr.sectiontableentry2:hover, .m-grid-body .row2:hover, .datagrid tr.odd:hover, .m4j_form_table tr:nth-child(odd):hover {
+	background-color:#DAEDB3 !important;
+}
+
+.grid a.category {display:block;}
+
+.grid tr a:hover, .grid tr:hover a, .m-grid-body tr a:hover, .m-grid-body tr:hover a {color: #000000;}
+
+/* ###################### LARGURAS E RETRO-COMPATIBILIDADE PARA LAYOUTS EM TABELA ###################### */
+
+table .tr .td, .table .tr .td {display:block;}
+.table {vertical-align:middle;}
+
+.w5p {width:0.5em;}
+td.p, div.p {min-width:7.5%; max-width:15%; width: 15%;}
+.w15 {width:15%;}
+.w20 {width:20%;}
+.w25 {width:25%;}
+.w30 {width:30%;}
+.w35 {width:35%;}
+.w40 {width:40%;}
+.w42 {width:42.5%;}
+.w50 {width:47%;}
+.w60 {width:60%;}
+.w75 {width:75%;}
+.w80 {width:80%;}
+
+/* ###################### SECTION LISTING SETTINGS ###################### */
+
+.sectiontableentry1 td, .sectiontableentry2 td, .row1 td, .row2 td {padding:0.25em;}
+
+.sectiontableheader a:link, .sectiontableheader a:visited {color: #FFFFFF;}
+
+.dm_row .dm_taskbar {visibility:hidden;}
+.dm_row:hover .dm_taskbar {visibility:visible;}

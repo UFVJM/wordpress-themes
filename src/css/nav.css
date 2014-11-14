@@ -1,0 +1,249 @@
+@charset "utf-8";
+/* CSS Document */
+#primaryNav { /* no gradient support */
+	background-color: #FFF;
+	/* Firefox 3.6+ */
+	background-image: -moz-linear-gradient(top, #fdfdfd, #f5f5f5);
+	/* webkit browsers */
+	background-image: -webkit-gradient(linear, center top, center bottom, from(#fdfdfd),
+		to(#f5f5f5));
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-o-border-radius: 3px;
+	margin-bottom: 1em;
+}
+
+.template .breadcrumbs,.pagination li a,#newsfeed ul li a, ul.table li.tr a,.td li.fieldset a
+	{
+	background-position: 99% 50%;
+	background-repeat: no-repeat;
+	border: 1px solid #E0E0E0;
+	color: #808080;
+	display: block;
+	overflow: hidden;
+	/* no gradient support */
+	background-color: #FFF;
+	/* Firefox 3.6+ */
+	background-image: -moz-linear-gradient(top, #fdfdfd, #f5f5f5);
+	/* webkit browsers */
+	background-image: -webkit-gradient(linear, center top, center bottom, from(#fdfdfd),
+		to(#f5f5f5));
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-o-border-radius: 3px;
+	text-shadow: #FFFFFF 1px -1px 0px;
+}
+
+.sf-menu li a {
+	color: #FFFFFF !important;
+}
+
+.breadcrumbs *,.pagination * {
+	vertical-align: middle;
+}
+
+.breadcrumbs a:link,.breadcrumbs a:visited,.pathwaytext {
+	font-size: 0.95em;
+}
+
+.breadcrumbs ul,.pagination ul {
+	overflow: hidden;
+}
+
+html> /**/ body .breadcrumbs ul:before,.breadcrumbs li,.pagination li {
+	float: left;
+	list-style: none;
+}
+
+.template .breadcrumbs li {
+	background-image: url(/img/breadcrumb_sep.png);
+	background-position: left center;
+	background-repeat: no-repeat;
+	float: left;
+	overflow: hidden;
+}
+
+.breadcrumbs li a:link,.breadcrumbs li a:visited {
+	clear: right !important;
+}
+
+.template .breadcrumbs li a:link span,.template .breadcrumbs li a:visited span,.template .breadcrumbs .show-last,.template .breadcrumbs .m-topmenu-current,#newsfeed ul li a, div ul li a.rsswidget
+	{
+	padding-left: 18px;
+}
+
+.template .breadcrumbs li a:link span,.template .breadcrumbs li a:visited span,.template .breadcrumbs .show-last,.template .breadcrumbs .m-topmenu-current,.template .breadcrumbs ul:before,#newsfeed ul li a, div ul li a.rsswidget
+	{
+	padding-top: 10px;
+	padding-right: 6px;
+	padding-bottom: 10px;
+	margin-bottom: 1px;
+	display: block;
+}
+
+ul.pagination {
+	line-height: 25px;
+	margin: 0 0 20px 0;
+	padding: 5px 0 7px 0px;
+}
+
+ul.pagination li a {
+	color: #1018A5;
+	margin: 0 4px;
+	padding: 0 7px;
+}
+
+ul.pagination li a,#newsfeed ul li a,div ul li a.rsswidget, ul.table li.tr a,.td li.fieldset a
+	{
+	-webkit-transition: background 0.1s linear, border 0.1s linear,
+		-webkit-box-shadow 0.1s linear;
+	-moz-transition: background 0.1s linear, border 0.1s linear,
+		-moz-box-shadow 0.1s linear;
+	-o-transition: background 0.1s linear, border 0.1s linear, -o-box-shadow
+		0.1s linear;
+	transition: background 0.1s linear, border 0.1s linear, box-shadow 0.1s
+		linear;
+}
+
+ul.pagination li.inactive {
+	/* no gradient support */
+	background-color: #2681D4;
+	/* webkit browsers */
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#2681D4),
+		color-stop(0.5, #216CB0), color-stop(0.5, #1C5E9B), to(#1D5284));
+	/* Firefox 3.6+ */
+	background-image: -moz-linear-gradient(top, #2681D4, #1D5284);
+	float: left;
+	list-style: none;
+	margin: 0 4px;
+	padding: 0 7px;
+	border: 1px solid #2681D4;
+	color: #FFFFFF;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-o-box-shadow: none;
+	box-shadow: none;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+ul.pagination li a:hover,ul.pagination li a:focus,#newsfeed ul li a:hover,div ul li a.rsswidget:hover, ul.table li.tr a:hover,.td li.fieldset a:hover,.td li.fieldset a:focus
+	{
+	-webkit-box-shadow: #999 0px 0px 3px;
+	-moz-box-shadow: #999 0px 0px 3px;
+	-o-box-shadow: #999 0px 0px 3px;
+	box-shadow: #999 0px 0px 3px;
+	border-color: #999;
+}
+
+#newsfeed ul li a:hover,.td li.fieldset a.external {
+	background-image:
+		url(http://livre.ufvjm.edu.br/img/external_link_icon.gif);
+}
+
+.breadcrumbs li.home-link {
+	background-image: none !important;
+}
+
+.breadcrumbs li.home-link a {
+	background-image: url("http://livre.ufvjm.edu.br/img/link-portal.gif");
+	width: 150px;
+	height: 35px;
+	padding-left: 18px;
+}
+
+/* ###################### MENU SETTINGS ###################### */
+#navbar li {
+	float: left;
+	margin-bottom: 1em;
+}
+
+#navbar .item70 span {
+	color: #F00;
+}
+
+#navbar .item89 span {
+	background-image: url(/img/external_link_icon.gif);
+	padding-right: 1.5em;
+	display: block;
+}
+
+.menu li span,#navbar li span,#left li span,.widget_pages ul li span {
+	background-position: right 50%;
+	background-repeat: no-repeat;
+}
+
+#left .menu li,.menushHMenu li,.mod_docman_ult li,#left .widget_pages li,ul.table li.tr,.td li.fieldset a
+	{
+	margin: 0.1em;
+}
+
+#atalhos .menu li,#sidebar .menu li,#sidebar .widget_pages li,#sidebar .widget_pages li,ul.table li.tr
+	{
+	margin-bottom: 0.5em;
+	display: block;
+}
+
+#left .menu li a,.menushHMenu li a,.mod_docman_ult li a,#left .widget_pages li a,ul.table li.tr a,.td li.fieldset a
+	{
+	display: block;
+	border: 1px solid #F0F0F0;
+	padding: 5px;
+	background-position: center center;
+	background-repeat: repeat-x;
+	/* no gradient support */
+	background-color: #FFF;
+	/* webkit browsers */
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fdfdfd),
+		color-stop(0.5, #FBFBFB), color-stop(0.5, #F7F7F7), to(#F5F5F5));
+	/* Firefox 3.6+ */
+	background-image: -moz-linear-gradient(top, #fdfdfd, #F5F5F5);
+	-webkit-transition: background-image 0.1s linear;
+	-moz-transition: background-image 0.1s linear;
+	-o-transition: background-image 0.1s linear;
+	transition: background-image 0.1s linear;
+}
+
+.sf-menu li,.sf-menu li li,.sf-menu li li li {
+	/* no gradient support */
+	background-color: #065FC5;
+	/* webkit browsers */
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#2681D4),
+		color-stop(0.5, #216CB0), color-stop(0.5, #1C5E9B), to(#1D5284));
+	/* Firefox 3.6+ */
+	background-image: -moz-linear-gradient(top, #2681D4, #1D5284);
+}
+
+.sf-menu li:hover,.sf-menu li.sfHover,.sf-menu a:focus,.sf-menu a:hover,.sf-menu a:active,.sf-menu #current,#left .menu li a:hover,.menushHMenu li a:hover,#left .widget_pages li a:hover
+	{
+	/* no gradient support */
+	background-color: #6DA621;
+	background-image: none;
+	/* webkit browsers */
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#A9D624),
+		color-stop(0.5, #6DA621), color-stop(0.5, #5D991F), to(#42851E));
+	/* Firefox 3.6+ */
+	background-image: -moz-linear-gradient(top, #A9D624, #42851E);
+}
+
+#left .menu li#current a,.menushHMenu li#current a,#left .current_page_item a
+#left .menu a:active,.menushHMenu li a:active,#left .page_item a:active,
+#left ul.menu li.current-menu-item a
+	{
+	/* no gradient support */
+	background-color: #2681D4;
+	/* webkit browsers */
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#2681D4),
+		color-stop(0.5, #216CB0), color-stop(0.5, #1C5E9B), to(#1D5284));
+	/* Firefox 3.6+ */
+	background-image: -moz-linear-gradient(top, #2681D4, #1D5284);
+}
+
+#left .menu li#current a span, .menussHMenu li#current a span, .current_page_item a span, #left ul.menu li.current-menu-item a span
+	{
+	color: #FFFFFF;
+}

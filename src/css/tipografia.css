@@ -1,0 +1,222 @@
+@CHARSET "UTF-8";
+
+/* Elementos HTML */
+
+@font-face {
+	font-family: "Futura Bold";
+	src: url("../fonts/futura-bold.ttf");
+}
+
+body, td, th,
+input, select, label,
+.contentpane, .contentpaneopen, .contentpaneopen p, .contentpaneopen td, .gsc-resultsRoot {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #333333;
+}
+
+body, .contentpane, .contentpaneopen, .contentpaneopen p, .description p {
+	text-align: justify;
+}
+
+div, #left, #atalho, .contentdescription, .gs-snippet, .description {text-align: left;}
+
+a {-webkit-transition: all 0.1s linear;-moz-transition: all 0.1s linear;-o-transition: all 0.1s linear;}
+abbr { border-bottom: 1px dotted; }
+em, .em { font-style: italic; }
+strong, .strong, div.category, td.category { font-weight: bold; }
+q { color: #000000; }
+
+.site-name {
+	font-family: "Futura Bold", Helvetica, sans-serif;
+}
+
+/* Paragrafo e listas */
+
+.contentpane, .contentpaneopen p, .contentpaneopen li, ul.newsfeed li, ul li .rsswidget, .widget_rss li, .contentdescription, .description p, .description li,
+.dm_license_body, .dm_license_body p, .dm_license_body li {
+	margin-bottom: 0.8em;
+	line-height:1.5em;
+}
+
+.contentpaneopen li, .description li, .dm_license_body li {
+	list-style: inside 1ex;
+	margin-left:1.45em;
+	vertical-align:top;
+}
+
+.contentpaneopen ol li, .mceContentBody ol li, .description ol li, .dm_license_body ol li {
+	list-style-type: decimal;
+}
+
+.contentpaneopen ul li, .mceContentBody ul li, .description ul li, .dm_license_body ul li {
+	list-style-image: url(http://livre.ufvjm.edu.br/img/li.png) !important;
+}
+
+.contenttoc li.active a {background-image: url(http://livre.ufvjm.edu.br/img/li.png); background-position: left; background-repeat: no-repeat; padding-left: 16px; }
+
+.contentpaneopen ul li:hover, .mceContentBody ul li:hover, .description ul li:hover, ul.important li, .dm_license_body ul li:hover {
+	list-style-image: url(http://livre.ufvjm.edu.br/img/li-hover.png) !important;
+}
+
+ul li ol li {
+	list-style-image: none !important;
+}
+
+/* Titulos */
+
+h1, #conteudo h2, .contentpaneopen h2, h3, h4, h5, h6, .componentheading, .info_name, #current-date-time {
+	page-break-inside: avoid;
+	text-align: left;
+	line-height: 150%;
+	font-weight: bold;
+}
+
+#conteudo h2, .contentpaneopen h2 {
+	border-bottom: 1px solid;
+	border-color: #0062A6;
+}
+
+h2, .componentheading, .contentheading {
+	margin-bottom: 0.5em;
+	min-height: 2em;
+}
+
+h2, h2 a, .componentheading, .componentheading a, .contentheading, .contentheading a {
+	color: #0062A6;
+}
+
+h2, .componentheading {
+	font-size: 1.45em;
+}
+
+h3, .info_name, .info_email, .eventlistmod .location {
+	font-size: 1.25em; display: block;
+}
+
+h3, h4, .contenttoc ul, .info_name {
+	margin-bottom:0.8em;
+	margin-top: 0.8em;
+}
+
+h3, .contentpaneopen h3, table.moduletable th, .blog_more div strong, .info_name, .moduletable h3 a:link, .moduletable h3 a:visited {
+	color: #4B5F60;
+	margin-top: 0.8em;
+	margin-bottom: 0.8em;
+}
+
+h4 {
+	color: #035DA4;
+	font-size:1.19em;
+	margin-top:0.19em;
+}
+
+h4.contentheading {
+	line-height:1;
+}
+
+.thumbsup-title {
+	font-size: 1.09em;
+	margin-bottom: 0.5em;
+}
+
+h5 {
+	color: #035DA4;
+	font-size: 1em;
+}
+
+td.category, div.category, .contentdescription, .gs-snippet {
+	font-size: 0.95em; color: #999999; text-decoration: none;
+}
+
+/* ###################### SMALL FONT SETTINGS ###################### */
+
+small, .small, .smalldark, .createdate, .gs-visibleUrl, .modifydate, .eventlistmod .date {
+	font-size: 0.9em;
+	text-decoration: none; 
+	font-weight: normal;
+}
+
+.small, span.depto {
+	color: #71809D;	
+}
+
+.smalldark, .createdate, .date, .gs-visibleUrl, .modifydate {
+	color: #666666;
+}
+
+/* ###################### LINKS ###################### */
+
+a:link, a:visited, .gs-result .gs-title, .gs-result .gs-title *, .description a:link, .description a:visited {
+	text-decoration: none;
+}
+
+.contentpaneopen p  a:link    strong,
+.contentpaneopen p  a:visited strong,
+.contentpaneopen li a:link    strong,
+.contentpaneopen li a:visited strong,
+.gs-promotion, .gs-title b {
+	background-color: #FFFFC0;
+} 
+
+.contentpane a:hover, .contentpaneopen a:hover, .contentheading a:hover, .description a:hover { background-color:#B8DC7C;}
+
+.contentpaneopen p  a:link    strong,
+.contentpaneopen p  a:visited strong,
+.contentpaneopen li a:link    strong,
+.contentpaneopen li a:visited strong,
+.gs-promotion {
+	font-size:1.2em;
+}
+
+.contentpaneopen p   a:hover strong,
+.contentpaneopen li  a:hover strong {
+	color: #C00000;
+}
+
+.contentpane a:link, .contentpane a:visited,
+.contentpaneopen a:link, .contentpaneopen a:visited,
+.breadcrumbs a:link, .breadcrumbs a:visited,
+#left ul a:link, #left ul a:visited,
+#atalhos ul a:link, #atalhos ul a:visited, #sidebar ul a:link, #sidebar ul a:visited, 
+.moduletable a:link, .moduletable a:visited,
+.gs-result .gs-title, .gs-result .gs-title *,
+#navbar a:link, #navbar a:visited,
+.description a:link, .description a:visited {
+  color            : #065FC5;
+}
+
+.contentpane a:hover, .contentpaneopen a:hover, .moduletable a:hover, h2 a:hover, .componentheading a:hover, .contentheading a:hover  {
+	text-decoration  : none;
+}
+
+
+#left ul a:hover, #left ul a:hover, #left ul #current a, #atalhos ul #current a, #sidebar ul #current a, #sidebar ul .current_page_item a, .menushHMenu a:hover, .menushHMenu #current a {color:#FFF !important;}
+
+a.mainlevel:link, a.mainlevel:visited {
+  color            : #808080;
+  font-weight      : normal;
+}
+
+a.mainlevel:hover {
+  color            : #3F7A12;
+  text-decoration  : underline;
+}
+
+a.category:link, a.category:visited {
+  color            : #999999;
+  font-weight      : bold;
+}
+
+a.category:hover {
+  color            : #3F7A12;
+}
+
+/* STYLES FOR JOOMLA! EDITOR */
+hr#system-readmore  { border: red dashed 1px; color: red; }
+hr.system-pagebreak { border: gray dashed 1px; color: gray; }
+
+/* Estilos específicos */
+
+#banner-manual {margin-bottom:60px; margin-top:-30px; font-size:1.15em;}
+#banner-manual * {text-align:center;}
+#banner-manual img {position:relative; top:30px; margin-right:15px; }

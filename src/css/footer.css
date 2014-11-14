@@ -1,0 +1,108 @@
+@charset "utf-8";
+/* CSS Document */
+#footer .laydiv * {
+	margin: 0px;
+	padding: 0px;
+	border: 0px none;
+	list-style-type: none;
+}
+
+#footer {
+	background-color: #FFFFFF;
+}
+
+.i,#footer .instit-links a {
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	display: block;
+	line-height: 0 !important;
+	text-indent: -9999px !important;
+}
+
+.l {
+	float: left;
+}
+
+.r {
+	float: right;
+}
+
+.c {
+	clear: both;
+}
+
+ul.horizontal li {
+	float: left;
+}
+
+ul.horizontal li a {
+	display: block;
+	text-decoration: none;
+}
+
+#footer {
+	background-color: #FFFFFF;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+#footer h2 {
+	margin-left: 19px;
+	margin-top: 9px;
+	width: 343px;
+}
+
+#footer #powerby {
+	float: right;
+	background-image: url(/img/footer/rodape-link.gif);
+	background-position: left bottom;
+	height: 46px;
+	width: 234px;
+}
+
+.contactinfo,.contactinfo ul,.contactinfo li {
+	color: #999;
+}
+
+.contactinfo ul {
+	clear: both;
+}
+
+.contactinfo li {
+	width: 33%;
+	float: left;
+	padding-bottom: 1em;
+	display: block;
+}
+
+.instit-links li,.instit-links li a {
+	height: 25px;
+	width: 90px;
+}
+
+.instit-links {
+	margin-top: 10px;
+}
+
+#footer-container {
+	background-color: #FFFFFF;
+}
+
+.instit-links .item2 a {
+	background-image: url(/img/footer/link-quem.gif);
+}
+
+.instit-links .item3 a {
+	background-image: url(/img/footer/link-onde.gif);
+}
+
+.instit-links .item4 a {
+	background-image: url(/img/footer/link-falecon.gif);
+}
+
+#footer #mapa-link {
+	background-image: url(/img/footer/link-mapa.gif);
+	height: 22px;
+	width: 91px;
+	margin: 7px;
+}

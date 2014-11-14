@@ -1,0 +1,423 @@
+/* CSS Document */
+
+/* Nao utilizar min-width, max-width ou display para labels, nem clear:both para forms */
+/* Nao utilizar font-size aqui */
+form {
+    text-align: left;
+}
+
+legend {
+    padding-top: 1.5em;
+}
+
+.form-wrapper {
+    width: 960px;
+    margin: 3em auto;
+}
+
+.form-wrapper fieldset {
+    margin-bottom: 1em;
+    border: 1px solid #0062A6;
+    border-radius: 3px;
+    background-color: #FFFFFF;
+}
+
+.form-wrapper .grid td p,.m-grid-body th div.tooltip a {
+    margin-top: 0.175em;
+    margin-bottom: 0.25em;
+}
+
+/* ###################### ROTULOS ###################### */
+label,span.label,.webapp .label {
+    font-size: 1em;
+    font-weight: bold !important;
+    margin-left: 1ex;
+}
+
+table.grid th label,table.datagrid th label {
+    color: #FFF;
+}
+
+label input {
+    margin-right: 0.5ex;
+}
+
+label.invalid {
+    color: #ff0000;
+}
+
+.percent:after {
+    content: '%';
+} /* Deve estar aqui? */
+.m4j_form_table td {
+    text-align: right;
+    vertical-align: middle !important;
+}
+
+.m4j_form_table table td {
+    text-align: left !important;
+}
+
+/* ###################### CAIXAS  ###################### */
+.input,.inputbox,.m-text-field,#table4 input,input.gsc-input,.m4j_form_table input,.m4j_form_table textarea,textarea#comment,input#author,input#email,input#url,input#goog-wm-qt,.m4j_form_table select
+{
+    background-color: #ffffff;
+    border-color: #0062A6;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px;
+    -webkit-transition: border 0.2s linear, -webkit-box-shadow 0.2s linear;
+    -moz-transition: border 0.2s linear, -moz-box-shadow 0.2s linear;
+    -o-transition: border 0.2s linear, -o-box-shadow 0.2s linear;
+    transition: border 0.2s linear, box-shadow 0.2s linear;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+#m4jForm input[type=text],#m4jForm textarea {
+    width: 95% !important;
+}
+
+/* Nao eh necessario usar #content ou #main ou #table4 */
+
+/* Generico */
+.input:hover,input:hover,input:focus,textarea:hover,textarea:focus,
+/* Joomla   */ .inputbox:hover,.inputbox:focus, /* Miolo    */
+.m-text-field:hover,.m-combo:hover,.m-combo:focus,.m-text-field:focus {
+    outline-color: #B4DA67;
+}
+
+/* Generico */
+.input:hover,input:hover,textarea:hover, /* Joomla   */ .inputbox:hover,
+/* Miolo    */ .m-text-field:hover,.m-combo:hover {
+    box-shadow: 0em 0em 0.3em #B4DA67;
+    -moz-box-shadow: 0em 0em 0.3em #B4DA67;
+    -webkit-box-shadow: 0em 0em 0.3em #B4DA67;
+    outline-color: #B4DA67;
+}
+
+/* Generico */
+.input:focus,input:focus,textarea:focus, /* Joomla   */ .inputbox:focus,
+/* Miolo    */ .m-text-field:focus,.m-combo:focus {
+    box-shadow: 0em 0em 0.3em #0062A6;
+    -moz-box-shadow: 0em 0em 0.3em #0062A6;
+    -webkit-box-shadow: 0em 0em 0.3em #0062A6;
+    outline-color: #0062A6;
+}
+
+.input[readonly],.inputbox[readonly],.m-readonly,#table4 input[readonly],.m4j_form_table table td
+{
+    background-color: #EAEAEA;
+    border-style: none !important;
+    color: #666;
+    padding: 0.1em;
+}
+
+.m4j_form_table table {
+    margin-bottom: 1em;
+}
+
+.input[readonly]:hover,.inputbox[readonly]:hover,.m-readonly:hover,.inputbox[readonly]:focus,#table4 input[readonly]:focus
+{
+    outline: none !important;
+}
+
+/* ###################### MENSAGENS DE ERRO ###################### */
+label.error,.textfieldRequiredState label {
+    color: #900;
+}
+
+div.error {
+    margin-bottom: 1em;
+}
+
+div.error,.m-prompt-box-error,label.error,ul.error,span.m4j_error {
+    padding: 0.5em;
+    border-color: #900;
+    background-color: #FBE6F2;
+}
+
+div.error,.m-prompt-box-error,label.error,#error-cont {
+    color: #FFF;
+    padding-left: 25px;
+    background: #FBE6F2 url(/img/alert-mini-icon.png) no-repeat 4px 4px;
+}
+
+#error {
+    display: block;
+    margin-bottom: 1.5em;
+    border: 0.1em solid;
+    border-color: #D893A1;
+    clear: both;
+}
+
+input.error,textarea.error,.textfieldRequiredState input {
+    border-color: #900;
+}
+
+.error:focus,.invalid:focus,.error:hover,.invalid:hover,.textfieldRequiredState input:focus,.textfieldRequiredState input:hover
+{
+    outline-color: #F00 !important;
+}
+
+#error,div.error,span.m4j_error,.textfieldRequiredState input {
+    border-style: solid;
+    border-width: 0.1em;
+    color: #900;
+    font-weight: bold;
+}
+
+.ui-dialog {
+    background-color: #900;
+    background-image: url(/img/fundo.jpg);
+    background-position: bottom;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+}
+
+.ui-dialog-titlebar {
+    border-width: 0em;
+}
+
+.ui-dialog-content {
+    text-align: left;
+    font-weight: bold;
+}
+
+/* @use: void */
+#error-cont,.ui-dialog p {
+    /*position:absolute; right: 0.5em; top:0.5em; */
+    background-color: #FFFFFF;
+    color: #333;
+}
+
+#error-cont dt,#error-cont dd {
+    margin-bottom: 1em;
+    padding-bottom: 0.1em;
+}
+
+#error-cont dt {
+    float: left;
+    width: 50%;
+    clear: left;
+}
+
+#error-cont dd {
+    float: right;
+    width: 50%;
+    clear: right;
+}
+
+/* ###################### MENSAGENS DE INFORMACAO ###################### */
+
+/* @replace: (#info-cont,div.info) */
+/* @use: joomla, siga */
+div.info,ul.info {
+    padding: 0.5em;
+    border-color: #FCEFA1;
+    background-color: #FBFAF3;
+}
+
+div.info {
+    color: #333333;
+    padding-left: 25px;
+    line-height: 1.6em;
+    margin-bottom: 1em;
+}
+
+#info {
+    display: block;
+    margin-bottom: 1.5em;
+    border: 0.1em solid;
+    border-color: #D893A1;
+    clear: both;
+}
+
+#info,div.info {
+    border-style: solid;
+    border-width: 0.1em;
+}
+
+input.info,textarea.info,.radioRequiredState,.inputRequiredState {
+    border-color: #900;
+}
+
+.invalid:focus,.invalid:hover {
+    outline-color: #F00 !important;
+}
+
+.info h1 {
+    font-size: 1.5em;
+    margin-top: 0.5em;
+}
+
+.info dt,.info p,.info li {
+    background: #FBFAF3 url(/img/info-mini-icon.png) no-repeat;
+    padding-left: 24px;
+    padding-top: 3px;
+}
+
+.info dt {
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 0.5em;
+    margin-bottom: 0.25em;
+}
+
+.info,.info p {
+    background-color: inherit;
+    color: #333;
+}
+
+.info dt,.info dd {
+    margin-bottom: 1em;
+    padding-bottom: 0.1em;
+}
+
+.info dt {
+    background: #FBFAF3 url(/img/info-mini-icon.png) no-repeat 4px 4px;
+}
+
+/* ###################### BOTOES ###################### */
+
+/* Generic button */
+button,input.button,a.button:link,a.button:visited, /* CSS3           */
+input[type=button],input[type=reset], /* Miolo Buttons  */ .m-button,#dm_license input,
+/* Void Buttons   */ .datagrid .button a:link,.datagrid .button a:visited,
+/* Mad4Joomla     */ .m4j_submit_wrap input, /* New Siga Btns  */
+.m-grid-body th div.tooltip li a,.m-grid-body ul div .m-link,
+/* Google Submit  */ input.gsc-search-button,input#goog-wm-sb {
+    background-color: #6DA621;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#A9D624),
+        color-stop(0.5, #6DA621), color-stop(0.5, #5D991F), to(#42851E));
+    background-image: -moz-linear-gradient(top, #A9D624, #42851E);
+    background-position: center;
+    background-repeat: repeat-x !important;
+    border-color: #CECECE Gray Gray #CECECE;
+    border-style: solid !important;
+    border-width: 0.1em !important;
+    color: #FFFFFF !important;
+    cursor: default;
+    font-weight: bold;
+    padding: 2.5px 10px;
+    text-align: center;
+    text-decoration: none !important;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.m-box-title .button {
+    background-color: transparent !important;
+    background-image: none !important;
+    padding: 0em !important;
+}
+
+/* Generic button */
+button:hover,input.button:hover,a.button:hover, /* CSS3           */
+input[type=button]:hover,input[type=reset]:hover, /* Miolo Buttons  */
+.m-button:hover,.m-grid-body ul div .m-link:hover, /* Void Buttons   */
+.datagrid .button a:hover, /* Mad4Joomla     */ .m4j_submit_wrap input:hover,
+/* New Siga Btns  */ .m-grid-body th div.tooltip li a:hover,
+/* Google Submit  */ input.gsc-search-button:hover {
+    background-color: #0062A6 !important;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#2681D4),
+        color-stop(0.5, #216CB0), color-stop(0.5, #1C5E9B), to(#1D5284));
+    background-image: -moz-linear-gradient(top, #2681D4, #1D5284);
+    color: #FFFFFF !important;
+}
+
+.grid .actions,.m-grid-body th div.tooltip ul,.m-grid-body th div.tooltip ul li
+{
+    margin: 0em !important;
+    padding: 0em !important;
+}
+
+.grid .actions li,.datagrid .actions li,div.tooltip li,.m-form-button-box li
+{
+    list-style-type: none !important;
+    list-style-image: none !important;
+    /* porque botoes e bolinhas nao combinam */
+}
+
+.datagrid .actions .button a {
+    display: block;
+    background-repeat: repeat-x; /* background-position:3px;*/
+}
+
+.datagrid .actions .button a span {
+    background-repeat: no-repeat;
+}
+
+.datagrid .actions .button a.del span {
+    padding-left: 20px;
+    background-image: url(/img/trash.png);
+}
+
+.datagrid .actions .button a.edit span {
+    padding-left: 20px;
+    background-image: url(/img/edit.png);
+}
+
+.datagrid .actions .button a.lock span {
+    padding-left: 20px;
+    background-image: url(/img/lock.png);
+}
+
+.datagrid .actions .button a.detail span,input[type=submit].detail {
+    padding-left: 20px;
+    background-image: url(/img/detail.png) !important;
+    background-repeat: no-repeat !important;
+}
+
+/* ###################### BUSCA ###################### */
+input.gsc-input,input.gsc-search-button {
+    padding-top: 0.5ex !important;
+    padding-bottom: 0.5ex !important;
+    border-color: #0062A6 !important;
+}
+
+input.gsc-input {
+    padding-left: 55px !important;
+    background-image: url("http://www.google.com/uds/css/small-logo.png")
+        !important;
+    background-position: 5px 50% !important;
+    background-repeat: no-repeat !important;
+}
+
+input.gsc-search-button {
+    padding-left: 0.5ex;
+    padding-right: 0.5ex;
+}
+
+#searchForm {
+    position: relative;
+}
+
+#searchForm #search-container #search-params {
+    position: absolute;
+    background-color: #FFFFFF;
+    border: 1px solid;
+    top: 2.5em;
+    padding: 10px;
+    display: none;
+}
+
+#searchForm #search-container:hover #search-params {
+    display: block;
+}
+
+#form-login-remember,.gsc-branding-img {
+    display: none !important;
+}
+
+#form-login p {
+    float: left;
+}
+
+#form-login .button,.m4j_form_table table {
+    margin-top: 1.1em;
+}
