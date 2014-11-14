@@ -30,6 +30,13 @@ class Sidebar {
 		register_sidebar( $sidebar_args );
 
 		register_sidebar( array(
+			'id'			 => 'hero',
+			'name'			 => \__( 'Home hero banner', 'ufvjm' ),
+			'before_widget'	 => '<div class="moduletable">',
+			'after_widget'	 => '</div>',
+		) );
+
+		register_sidebar( array(
 			'id'			 => 'sidebar-nav',
 			'name'			 => \__( 'Navigation sidebar', 'ufvjm' ),
 			'before_widget'	 => '<div class="inner"><div class="moduletable">',

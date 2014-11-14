@@ -24,7 +24,7 @@
 </header>
 <?php if ( is_home() ) { ?>
 	<div class="section laydiv w w-row">
-		<img src="http://placehold.it/990x150" />
+		<?php dynamic_sidebar( 'hero' ); ?>
 	</div>
 <?php } ?>
 <div class="laydiv w section">
